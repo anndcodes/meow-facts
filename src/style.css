@@ -63,6 +63,7 @@ footer {
   font-size: 1.3rem;
 }
 
-footer span {
+footer a {
   color: #e884b2;
+  text-decoration: none;
 }
