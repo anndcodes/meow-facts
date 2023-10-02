@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: auto;
+  width: 100%;
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 6rem;
+  padding-bottom: 10px;
+  font-family: "Croissant One", cursive;
+  color: #f7c882;
+}
+
+.sub-title {
+  font-size: 1.8rem;
+  padding-bottom: 25px;
+}
+
+#btn {
+  border: none;
+  border-radius: 16px;
+  font-size: 1.6em;
+  font-weight: 500;
+  padding: 15px 25px;
+  font-family: inherit;
+  background: #f8e0ea;
+  color: #93784f;
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#btn:hover {
+  background: #eeaec6;
+}
+
+#btn:active {
+  box-shadow: none;
+}
