@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meow Facts</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        class="header-img"
+        src="assets/header.svg"
+        alt="
+      An illustration of three cute cats"
+      />
+      <h1 class="title">Meow Facts</h1>
+      <p class="sub-title">Click meow to get cats facts</p>
+      <button id="btn">Meow</button>
+    </header>
+
+    <!-- script -->
+    <script>
+      let meowLink = "https://meowfacts.herokuapp.com/";
+
+      let btn = document
+        .getElementById("btn")
+        .addEventListener("click", getMeows);
+
+      function getFacts(response) {
+        let meows = document.querySelector(".sub-title");
+        meows.textContent = response.data.data;
+      }
+
+      function getMeows() {
+        axios.get(meowLink).then(getFacts);
+      }
+    </script>
+  </body>
+</html>
